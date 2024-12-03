@@ -2,8 +2,8 @@ import * as fs from "node:fs/promises";
 import * as path from "node:path";
 
 async function readInput(filePath: string) {
-	const raWInput = await fs.readFile(filePath, "utf-8");
-	const lines = raWInput.split("\n");
+	const rawInput = await fs.readFile(filePath, "utf-8");
+	const lines = rawInput.split("\n");
 	// console.log("Lines:", lines);
 
 	const leftList: number[] = [];
